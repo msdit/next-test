@@ -22,7 +22,7 @@ export const Input: FC<InputProps> = (props) => {
                         ? 'bg-neutral-100 text-neutral-400'
                         : 'bg-neutral-200 focus:outline-none focus:bg-white focus:border-primary-600 '
                 }`}
-                {...{ disabled, ...otherProps }}
+                {...{ id, disabled, ...otherProps }}
             />
         </div>
     )

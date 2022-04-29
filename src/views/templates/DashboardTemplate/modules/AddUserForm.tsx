@@ -54,7 +54,7 @@ const AddUserForm: FC<IAddUserFormProps> = () => {
     if (!isFormShow)
         return (
             <div className="float-right mb-4">
-                <Button varient="bordered" onClick={handleAdd}>
+                <Button id="addUser" varient="bordered" onClick={handleAdd}>
                     + Add user
                 </Button>
             </div>
@@ -84,6 +84,7 @@ const AddUserForm: FC<IAddUserFormProps> = () => {
                 />
                 <div className="flex flex-row justify-center items-center w-full md:w-auto">
                     <Button
+                        id="submitAddUser"
                         className="mr-4 flex-1 md:grow-0"
                         type="submit"
                         disabled={
@@ -93,6 +94,7 @@ const AddUserForm: FC<IAddUserFormProps> = () => {
                         Add
                     </Button>
                     <Button
+                        id="cancleAddUser"
                         className="flex-1 md:grow-0"
                         onClick={handleCancle}
                         varient="bordered"

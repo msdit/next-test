@@ -35,6 +35,8 @@ const DataRow: FC<IDataRowProps> = (props) => {
         setIsEditFormShow(false)
     }
 
+    const id = email.replace(/\.|@/g, '')
+
     return (
         <div className="bg-white shadow-md my-4 px-6 py-4 rounded-md w-full">
             <div className="flex flex-col md:flex-row justify-between items-center w-full">
@@ -44,7 +46,10 @@ const DataRow: FC<IDataRowProps> = (props) => {
                         src={getAvatar(email)}
                         alt={name}
                     />
-                    <div className="flex-1 flex flex-col md:flex-row md:flex-1 md:justify-between md:items-center mx-4 max-w-[calc(100%_-_80px)]">
+                    <div
+                        id={`data_${id}`}
+                        className="flex-1 flex flex-col md:flex-row md:flex-1 md:justify-between md:items-center mx-4 max-w-[calc(100%_-_80px)]"
+                    >
                         <TextTitleValue title="name" value={name} />
                         <TextTitleValue title="email" value={email} />
                         <TextTitleValue
@@ -55,6 +60,7 @@ const DataRow: FC<IDataRowProps> = (props) => {
                 </div>
                 <div className="flex flex-row items-center">
                     <p
+                        id={`remove_${id}`}
                         onClick={handleRemove}
                         className="text-red-700 text-sm px-4 py-2 cursor-pointer"
                     >
@@ -62,6 +68,7 @@ const DataRow: FC<IDataRowProps> = (props) => {
                     </p>{' '}
                     |{' '}
                     <p
+                        id={`edit_${id}`}
                         onClick={handleEdit}
                         className="text-blue-700 text-sm px-4 py-2 cursor-pointer"
                     >

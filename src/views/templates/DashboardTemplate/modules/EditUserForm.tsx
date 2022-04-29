@@ -58,6 +58,7 @@ const EditUserForm: FC<IEditUserFormProps> = (props) => {
 
                 <div className="flex flex-row justify-center items-center w-full md:w-auto">
                     <Button
+                        id="submitEditUser"
                         className="mr-4 flex-1 md:grow-0"
                         type="submit"
                         disabled={formFields.name === ''}
@@ -65,6 +66,7 @@ const EditUserForm: FC<IEditUserFormProps> = (props) => {
                         Edit
                     </Button>
                     <Button
+                        id="cancleEditUser"
                         className="flex-1 md:grow-0"
                         onClick={handleCancle}
                         varient="bordered"

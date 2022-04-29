@@ -1,1 +1,13 @@
-{}
+{
+    "fixturesFolder": "cypress/fixtures",
+    "integrationFolder": "cypress/integration",
+    "pluginsFile": "cypress/plugins/index.js",
+    "screenshotsFolder": "cypress/data/screenshots",
+    "videosFolder": "cypress/data/videos",
+    "downloadsFolder": "cypress/data/downloads",
+    "supportFile": "cypress/support/index.js",
+    "baseUrl": "http://localhost:3000",
+    "pageLoadTimeout": 3600000,
+    "requestTimeout": 3600000,
+    "defaultCommandTimeout": 3600000
+}

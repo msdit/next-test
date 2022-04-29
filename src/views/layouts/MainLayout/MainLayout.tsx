@@ -36,6 +36,7 @@ const MainLayout: FC<MainLayoutProps> = (props) => {
                             <div className="flex items-center">
                                 <p className="text-sm mr-2">{username}</p>|
                                 <p
+                                    id="logout"
                                     onClick={handleLogout}
                                     className="cursor-pointer text-sm p-2"
                                 >

@@ -51,7 +51,7 @@ const LoginTemplate: FC<ILoginTemplateProps> = (props) => {
                     Incorrect username or password!
                 </p>
             )}
-            <Button type="submit">Login!</Button>
+            <Button id="submitLogin" type="submit">Login!</Button>
         </form>
     )
 }
