@@ -1,10 +1,10 @@
 import { FC, useEffect } from 'react'
-import { dataType } from '@/types/dataType'
+import { dataType } from 'types/dataType'
 import DataRow from './modules/DataRow'
 import { useDispatch, useSelector } from 'react-redux'
 import AddUserForm from './modules/AddUserForm'
-import { IReduxState, updateUsername } from '@/state'
-import { decodeToken, getToken } from '@/auth'
+import { IReduxState, updateUsername } from 'state'
+import { decodeToken, getToken } from 'auth'
 
 interface IDashboardTemplateProps {}
 

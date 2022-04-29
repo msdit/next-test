@@ -1,9 +1,9 @@
 import { ReactNode } from 'react'
 import { FC } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { IReduxState, IUserStateProps, updateUsername } from '@/state'
-import { removeToken } from '@/auth'
-import Container from '@/views/components/Container'
+import { IReduxState, IUserStateProps, updateUsername } from 'state'
+import { removeToken } from 'auth'
+import Container from '@/components/Container'
 
 interface MainLayoutProps {
     hasHeader?: boolean

@@ -1,9 +1,9 @@
 import { FC, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { addData, IDataStateProps, IReduxState } from '@/state'
-import { useForm } from '@/hooks'
-import Button from '@/views/components/Button'
-import Input from '@/views/components/Input'
+import { addData, IDataStateProps, IReduxState } from 'state'
+import { useForm } from 'hooks'
+import Button from '@/components/Button'
+import Input from '@/components/Input'
 
 interface IAddUserFormProps {}
 

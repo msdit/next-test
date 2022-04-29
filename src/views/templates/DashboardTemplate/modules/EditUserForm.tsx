@@ -1,9 +1,9 @@
-import { useForm } from '@/hooks'
+import { useForm } from 'hooks'
 import { FC } from 'react'
 import { useDispatch } from 'react-redux'
-import { editData } from '@/state'
-import Input from '@/views/components/Input'
-import Button from '@/views/components/Button'
+import { editData } from 'state'
+import Input from '@/components/Input'
+import Button from '@/components/Button'
 
 interface IEditUserFormProps {
     name: string

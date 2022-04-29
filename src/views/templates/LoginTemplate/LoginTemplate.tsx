@@ -1,9 +1,9 @@
-import { useForm } from '@/hooks'
-import { createJWT, setToken } from '@/auth'
+import { useForm } from 'hooks'
+import { createJWT, setToken } from 'auth'
 import { useRouter } from 'next/router'
 import { FC, useState } from 'react'
-import Input from '@/views/components/Input'
-import Button from '@/views/components/Button'
+import Input from '@/components/Input'
+import Button from '@/components/Button'
 
 interface ILoginTemplateProps {}
 

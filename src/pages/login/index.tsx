@@ -1,6 +1,6 @@
-import { withAuth } from '@/hoc'
-import MainLayout from '@/views/layouts/MainLayout'
-import LoginTemplate from '@/views/templates/LoginTemplate'
+import { withAuth } from 'hoc'
+import MainLayout from '@/layouts/MainLayout'
+import LoginTemplate from '@/templates/LoginTemplate'
 import { NextPage } from 'next'
 
 const Login: NextPage = () => {

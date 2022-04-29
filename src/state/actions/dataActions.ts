@@ -1,4 +1,4 @@
-import { dataType } from '@/types/dataType'
+import { dataType } from 'types/dataType'
 import * as types from '../actionTypes'
 
 interface addDataType {

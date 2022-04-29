@@ -1,11 +1,11 @@
 import { FC, useState } from 'react'
 import crypto from 'crypto'
 import { gregorianToJalali } from 'shamsi-date-converter'
-import { dataType } from '@/types/dataType'
+import { dataType } from 'types/dataType'
 import TextTitleValue from './TextTitleValue'
 import { useDispatch } from 'react-redux'
 import EditUserForm from './EditUserForm'
-import { removeData } from '@/state'
+import { removeData } from 'state'
 
 function getAvatar(email: string): string {
     const emailHash = crypto

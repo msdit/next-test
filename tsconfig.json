@@ -16,12 +16,9 @@
         "incremental": true,
         "baseUrl": "src",
         "paths": {
-            "@/views/*": ["views/*"],
-            "@/types/*": ["types/*"],
-            "@/hoc": ["hoc/index.ts"],
-            "@/state": ["state/index.ts"],
-            "@/hooks": ["hooks/index.ts"],
-            "@/auth": ["auth/index.ts"]
+            "@/components/*": ["views/components/*"],
+            "@/layouts/*": ["views/layouts/*"],
+            "@/templates/*": ["views/templates/*"]
         }
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

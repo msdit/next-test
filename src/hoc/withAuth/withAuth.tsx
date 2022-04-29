@@ -1,13 +1,13 @@
 import { FC, createElement, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useRouter } from 'next/router'
-import { getToken, decodeToken } from '@/auth'
+import { getToken, decodeToken } from 'auth'
 import {
     IReduxState,
     IUserStateProps,
     updateUserLoading,
     updateUsername,
-} from '@/state'
+} from 'state'
 
 const withAuth =
     (ComposedComponent: FC, type: 'LOGIN' | 'DASHBOARD') => (props: any) => {
